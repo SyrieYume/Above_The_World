@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="height=device-height,initial-scale=1.0">
+
+    <!-- 链接css和js -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <!-- 网页标题和图标 -->
+    <title>代号：无限大</title>
+    <link rel="shortcut icon" href="res/icons/icon.jpg"/>
+</head>
+<body>
+    <div id="characters"></div>        
+    
+    <div id="lyric">
+        <b id="lyric_en"></b>
+        <br/>
+        <b id="lyric_zh"></b>
+    </div>
+    
+    <canvas id="spectrum"></canvas>
+    
+    <audio style="position: absolute;"></audio>
+
+    <div id="toolbar">
+        <input type="file" id="selectMusic" accept="audio/*">
+        <label for="selectMusic">
+            <img src="res/icons/音乐.svg" style="margin-left: 20px;"></img>
+            选择音乐
+        </label>
+
+        <input type="file" id="selectLyric">
+        <label for="selectLyric">
+            <img src="res/icons/歌词2.svg" style="margin-left: 20px;"></img>
+            选择歌词
+        </label>
+
+        <label id="play">
+            <img src="res/icons/播放.svg" style="margin-left: 20px;"></img>
+            播放
+        </label>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

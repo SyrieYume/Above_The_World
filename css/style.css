@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Font1";
+    src: url("../res/font.otf") format("truetype");
+}
+
+html {
+    background-color: rgb(139, 200, 229);
+    background-image: url("../res/代号无限大.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+/** 隐藏滚动条 **/
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+* {
+    font-family: "Font1";
+}
+
+div#lyric {
+    position: absolute;
+    z-index: 90;
+    text-align: center;
+    transform: rotateY(60deg) rotateZ(-10deg);
+    width: 2338px;
+    left: -550px;
+    top: 160px;
+}
+
+b#lyric_zh, b#lyric_en {
+    color: rgb(252, 253, 254);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(246, 248, 252), rgb(193, 207, 234));
+    background-clip: text;
+    color: transparent;
+    font-size: 100px;
+    white-space: nowrap; 
+    transition: .7s all ease;
+}
+
+b#lyric_en {
+    font-size: 90px;
+}
+
+div#characters {
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../res/人物部分.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+canvas#spectrum {
+    position: absolute;
+    z-index: 120;
+    bottom: 8px;
+    left: 8%;
+    width: 84%;
+    height: 20%;
+    margin: auto;
+    opacity: 75%;
+}
+
+div#toolbar {
+    opacity: 0;
+    position: absolute;
+    z-index: 130;
+    left: 10px;
+    bottom: 10px;
+    transition: .7s all ease;
+
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+input[type="file"] {
+    width: 0;
+    height: 0;
+}
+
+
+label {
+    font-size: 12px;
+    cursor: pointer ;
+}
